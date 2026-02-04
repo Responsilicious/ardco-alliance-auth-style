@@ -993,6 +993,8 @@ html {
   width: 3.5em !important;
 }
 
+.svg-alliance-auth-logo{display:none!important;} #sidebar-menu li {margin-top: 5px!important;} .navbar {max-height: 60px !important;}
+
 /* ═══════════════════════════════════════════════════════════════════════════
    END OF ARDCO THEME
    ═══════════════════════════════════════════════════════════════════════════ */
