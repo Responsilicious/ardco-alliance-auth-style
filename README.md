@@ -2,7 +2,7 @@
 
 Complete ARDCO Fuel Company design system for Alliance Auth with Bootstrap 5.
 
-You can now ijeect direectly using the JSDelivr CDN
+You can now include the CSS directly using the JSDelivr CDN
 
 `<link href="https://cdn.jsdelivr.net/gh/Responsilicious/ardco-alliance-auth-style/ardco-alliance-auth.min.css" rel="stylesheet" type="text/css">`
 
