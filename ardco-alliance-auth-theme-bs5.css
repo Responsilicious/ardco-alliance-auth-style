@@ -138,15 +138,7 @@ code {
 .collapse-horizontal {
   background: var(--ardco-panel) !important;
   border-right: 1px solid rgba(122, 167, 255, .20);
-  /* Make sidebar overlay content instead of taking space in the document flow */
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 260px; /* default sidebar width */
-  transform: translateX(-100%); /* hidden off-canvas by default */
-  transition: transform 0.25s ease;
-  z-index: 1040; /* overlay above normal page content */
+  position: relative;
 }
 .collapse-horizontal::before {
   content: "";
@@ -171,18 +163,9 @@ code {
   pointer-events: none;
   z-index: 0;
 }
-
-.collapse-horizontal.show,
-.collapse-horizontal.collapsing,
-.collapse-horizontal[aria-expanded="true"] {
-  transform: translateX(0);
-}
-
-/* Responsive: narrower devices get a percentage width */
-@media (max-width: 768px) {
-  .collapse-horizontal {
-    width: 80vw;
-  }
+.collapse-horizontal > * {
+  position: relative;
+  z-index: 1;
 }
 
 #sidebar-menu li {
